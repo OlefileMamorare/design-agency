@@ -1,0 +1,75 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  float: left;
+  margin-right: 8px;
+  border-radius: 4%;
+}
+
+.left {
+  display: inline-block;
+  width: 45%;
+}
+
+.right {
+  float: right;
+  width: 45%;
+}
+
+div p {
+  text-align: justify;
+}
+
+@media (min-width : 711px){
+  .tile-image{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width : 710px){
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .h1 {
+    grid-area: span;
+    text-align: center;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .tile-image {
+    width: 70%;
+  }
+    
+}
+
+#span {
+  font-family: 'Protest Riot', sans-serif;
+  color: blueviolet;
+}
